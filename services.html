@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="task1.css">
+    <script src="task1.jss"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="task1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+        body {
+            background: #fffff5;
+            padding: 50px 0;
+        }
+
+        .nav {
+            font-family: 'Titillium Web';
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .nav * {
+            box-sizing: border-box;
+            transition: all .35s ease;
+        }
+
+        .nav li {
+            display: inline-block;
+            list-style: outside none none;
+            margin: .5em 1em;
+            padding: 0;
+        }
+
+        .nav a {
+            padding: .5em .8em;
+            color: rgba(243, 238, 238, 0.993);
+            position: relative;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .nav a::before,
+        .nav a::after {
+            content: '';
+            height: 14px;
+            width: 14px;
+            position: absolute;
+            transition: all .35s ease;
+            opacity: 0;
+        }
+
+        .nav a::before {
+            content: '';
+            right: 0;
+            top: 0;
+            border-top: 3px solid #3E8914;
+            border-right: 3px solid #2E640F;
+            transform: translate(-100%, 50%);
+        }
+
+        .nav a:after {
+            content: '';
+            left: 0;
+            bottom: 0;
+            border-bottom: 3px solid #2E640F;
+            border-left: 3px solid #3E8914;
+            transform: translate(100%, -50%)
+        }
+
+        .nav a:hover:before,
+        .nav a:hover:after {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+
+        .nav a:hover {
+            color: #f4f814;
+        }
+
+        header {
+            
+            background-color: #c42e2e;
+            color: #fff;
+            padding: 25px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #navbar {
+            text-align: center;
+        }
+        </style>
+
+<section class="services">
+    <h1>SERVICES SECTION</h1>
+    <!-- <p>This is the services section contentlorem145
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae optio perferendis rerum obcaecati
+        exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet. Sint
+        perspiciatis culpa similique error doloremque laudantium unde eos architecto deserunt iste quis iusto
+        quas id temporibus, soluta illum accusamus dolore sapiente quisquam, non, amet recusandae exercitationem
+        aliquid? Repellat in placeat obcaecati deserunt ea temporibus quibusdam atque molestiae suscipit porro
+        quasi officia exercitationem sint, quam fugiat optio illo odio veniam dicta nam modi natus laboriosam
+        impedit debitis! . </p> -->
+</section>
+
+<div class="card-container">
+    <div class="card">
+        <img src="2PUB_McDelivery_2336x1040_publication-column-mobile.jfif" alt="Image 1">
+        <h2>McDelivery®</h2>
+        <p>McDonald’s delivers all of your favorites right to your doorstep, plus a little bit more.</p>
+        <button>Read More</button>
+    </div>
+    <div class="card">
+        <img src="_publication-column-mobile3.jfif" alt="Image 2">
+        <h2>Mobile Order & Pay</h2>
+        <p>Use the McDonald’s app to check out local menu prices & deals and to order your favorites.</p>
+        <button>Read More</button>
+    </div>
+    <div class="card">
+        <img src="3PUB_Services2.jfif" alt="Image 3">
+        <h2>Get the App</h2>
+        <p>Download the app for Mobile Order & Pay, MyMcDonald's Rewards* and exclusive offers.</p>
+        <button>Read More</button>
+    </div>
+</div>
+<section class="services">
+    <p>This is the services section contentlorem145
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae optio perferendis rerum obcaecati
+        exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet. Sint
+        perspiciatis culpa similique error doloremque laudantium unde eos architecto deserunt iste quis iusto
+        quas id temporibus, soluta illum accusamus dolore sapiente quisquam, non, amet recusandae exercitationem
+        aliquid? Repellat in placeat obcaecati deserunt ea temporibus quibusdam atque molestiae suscipit porro
+        quasi officia exercitationem sint, quam fugiat optio illo odio veniam dicta nam modi natus laboriosam
+        impedit debitis! .</p>
+</section>
+
+</body>
+
+</html>

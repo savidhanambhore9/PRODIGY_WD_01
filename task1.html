@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="task1.css">
+    <script src="task1.jss"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="task1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+        body {
+            background: #78a1b4;
+            padding: 50px 0;
+        }
+
+        .nav {
+            font-family: 'Titillium Web';
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .nav * {
+            box-sizing: border-box;
+            transition: all .35s ease;
+        }
+
+        .nav li {
+            display: inline-block;
+            list-style: outside none none;
+            margin: .5em 1em;
+            padding: 0;
+        }
+
+        .nav a {
+            padding: .5em .8em;
+            color: rgba(243, 238, 238, 0.993);
+            position: relative;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .nav a::before,
+        .nav a::after {
+            content: '';
+            height: 14px;
+            width: 14px;
+            position: absolute;
+            transition: all .35s ease;
+            opacity: 0;
+        }
+
+        .nav a::before {
+            content: '';
+            right: 0;
+            top: 0;
+            border-top: 3px solid #3E8914;
+            border-right: 3px solid #2E640F;
+            transform: translate(-100%, 50%);
+        }
+
+        .nav a:after {
+            content: '';
+            left: 0;
+            bottom: 0;
+            border-bottom: 3px solid #2E640F;
+            border-left: 3px solid #3E8914;
+            transform: translate(100%, -50%)
+        }
+
+        .nav a:hover:before,
+        .nav a:hover:after {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+
+        .nav a:hover {
+            color: #f4f814;
+        }
+
+        header {
+            
+            background-color: #c42e2e;
+            color: #fff;
+            padding: 25px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #navbar {
+            text-align: center;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Space between blocks */
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: rgb(247, 223, 13);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .blocky {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: rgb(238, 231, 231);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .block img {
+            width: 400px; /* Image width */
+             /* Image height */
+             /* Circular image */
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .blocky img {
+            width: 400px; /* Image width */
+             /* Image height */
+             /* Circular image */
+            margin-right: 20px; /* Space between image and text */
+        }
+        .block h2 {
+            margin: 0 0 10px;
+        }
+
+        .block p {
+            margin: 0;
+        }
+
+
+        /* #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  #navbar ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  #navbar ul li a {
+    font-family: fantasy;
+    color: #ecf7f7;
+    text-decoration: seagreen;
+    padding: 25px;
+    font-size: x-large;
+    transition: all 0.3s ease;
+    
+  }
+  
+  #navbar ul li a:hover {
+    background-color: #190646;
+    
+  }
+  
+  #navbar.scrolled {
+    background-color: #222;
+  }
+  
+  #navbar.scrolled ul li a {
+    color: #ccc;
+  }
+  
+  #navbar.scrolled ul li a:hover {
+    background-color: #444;
+  } */
+
+
+  #contentp img{
+    width: 200px;
+    display: flex;
+    margin-top: 30px;
+    padding-top: 80px;
+
+  }
+  #contentp p{
+    font-size: 100px;
+    font-weight:900;
+    padding-left: 400px;
+    margin-top: -150px;
+    color: #ecf009;
+    border-color: #c42e2e;    
+
+  }
+
+  .nonveg img{
+    width: 70px;
+    margin-bottom: 200px;
+    margin-left: 700px;
+  }
+
+  .veg img{
+    width: 70px;
+    margin-bottom: 200px;
+    margin-left: 700px;
+  }
+
+  .add-to-cart {
+    background-color: #f8d030; /* McDonald's yellow */
+    color: white;
+    border:seagreen;
+    border-radius: 5px;
+    font-weight: 700    ;
+    font-size: 16px;
+    width: 800px;
+    height: 50px;
+    padding-left: px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart:hover {
+    background-color: #e03c30; /* Slightly darker on hover */
+    box-shadow: 0 6px 15px rgb(53, 23, 23);
+}
+
+.blocky button {
+    margin-left: -400px;
+    margin-top: 200px;
+}
+.block button {
+    margin-left: -400px;
+    margin-top: 200px;
+}
+    </style>
+
+
+<section>
+    <div id="contentp">
+        <img src="pngegg (1).png" alt="">
+        <p>i'm lovin'it</p>
+    </div>
+</section>
+   
+        
+        <section id="homep">
+            
+    
+            <div class="container">
+                <div class="blocky">
+                    <img src="pngegg (2).png" alt="Description 1">
+                    <div>
+                        <h2>4 Piece Cheese McNuggets® Happy Meal®</h2>
+                        
+                    </div>
+                    <div class="veg">
+                        <img src="veg-icon.png" alt="">
+                    </div>
+
+                    <button class="add-to-cart">Add to Cart</button>
+
+                </div>
+    
+                <div class="block">
+                    <img src="pngegg (3).png" alt="Description 2">
+                    <div>
+                        <h2>The McChicken® $5 Meal Deal*</h2>
+                        
+                    </div>
+                    <div class="nonveg">
+                        <img src="non-veg-icon.png" alt="">
+                    </div>
+
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+    
+                <div class="blocky">
+                    <img src="pngegg (4).png" alt="Description 3">
+                    <div>
+                        <h2>Quarter chicken®* with Cheese Deluxe</h2>
+                        
+                    </div>
+                    <div class="nonveg">
+                        <img src="non-veg-icon.png" alt="">
+                    </div>
+
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+    
+                <div class="block">
+                    <img src="pngegg (5).png" alt="Description 4">
+                    <div>
+                        <h2>Spicy Deluxe McCrispy™</h2>
+                        
+                    </div>
+                    <div class="nonveg">
+                        <img src="non-veg-icon.png" alt="">
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>

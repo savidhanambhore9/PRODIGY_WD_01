@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="task1.css">
+    <script src="task1.jss"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="task1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+        body {
+            background: #e2e4d2;
+            padding: 50px 0;
+        }
+
+        .nav {
+            font-family: 'Titillium Web';
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .nav * {
+            box-sizing: border-box;
+            transition: all .35s ease;
+        }
+
+        .nav li {
+            display: inline-block;
+            list-style: outside none none;
+            margin: .5em 1em;
+            padding: 0;
+        }
+
+        .nav a {
+            padding: .5em .8em;
+            color: rgba(243, 238, 238, 0.993);
+            position: relative;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .nav a::before,
+        .nav a::after {
+            content: '';
+            height: 14px;
+            width: 14px;
+            position: absolute;
+            transition: all .35s ease;
+            opacity: 0;
+        }
+
+        .nav a::before {
+            content: '';
+            right: 0;
+            top: 0;
+            border-top: 3px solid #3E8914;
+            border-right: 3px solid #2E640F;
+            transform: translate(-100%, 50%);
+        }
+
+        .nav a:after {
+            content: '';
+            left: 0;
+            bottom: 0;
+            border-bottom: 3px solid #2E640F;
+            border-left: 3px solid #3E8914;
+            transform: translate(100%, -50%)
+        }
+
+        .nav a:hover:before,
+        .nav a:hover:after {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+
+        .nav a:hover {
+            color: #f4f814;
+        }
+
+        header {
+            
+            background-color: #c42e2e;
+            color: #fff;
+            padding: 25px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #navbar {
+            text-align: center;
+        }
+        </style>
+
+        <section id="contact">
+
+            <DIV id="cus">
+                <p>How can we help you?</p>
+            </DIV>
+
+            <div><h1>CONTACT US</h1></div> 
+
+            <div id="c2">
+                <p>We're  here to help and answer any question you might have. we look forward from hearing you.</p>
+                
+            </div>
+            <div class="info">
+                <p>Address:- Mumbai 40008, Maharshtra. </p>
+                <p>Phone  :- +91 9987699737</p>
+                <p>Mail   :- savi9@gmail.com</p>
+            </div>
+
+        </section>
+
+        <section id="image">
+            <img src="post - Copy.png" alt="not avail">
+        </section>
+        
+    </div>
+
+</body>
+
+</html>

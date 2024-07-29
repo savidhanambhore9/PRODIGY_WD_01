@@ -1,0 +1,156 @@
+
+  
+  #content {
+    padding-top: 60px;
+    font-family: monospace;
+    font-size: large;
+    padding: 17px;
+  }
+  #content h1{
+    align-items: center ;
+    color: wheat;
+    font-size: 50px;
+    padding-left: 450px;
+    padding-top: 20px;
+
+  }
+
+  #cus p{
+    margin-top: 100px;
+    color: rgb(31, 11, 102);
+    font-family: monospace;
+  font-weight: 1000;
+    
+  }
+
+  #c2 p{
+    color: rgb(228, 10, 10);
+    padding-right: 900px;
+    margin-top: -20px;
+  }
+  #contact{
+    padding-top: px;
+    font-family: monospace;
+    font-size: large;
+    padding: 17px;
+    color: black;
+    margin-top: -10px;
+
+  }
+  #contact h1 {
+    align-items: center ;
+    color: rgb(218, 233, 11);
+    font-size: 100px;
+    padding-left: px;
+    margin-top: -2px;
+
+
+  }
+  .info{
+    padding-top: 25px;
+    color: black;
+  }
+  .info p{
+    padding: 30;
+    color: rgb(88, 71, 38);
+  }
+  #image img{
+    float: right;
+    width: 300px;
+    margin-top: -300px;
+    padding-right: 30px;
+
+  }
+  
+  .services{
+    padding-top: 60px;
+    font-family: monospace;
+    font-size: large;
+    
+    padding: 17px;
+  }
+
+  .services h1{
+    align-items: center ;
+    color: rgb(228, 156, 24);
+    font-size: 50px;
+    padding-left: 500px;
+    padding-top: 20px;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin: 16px 0 8px;
+}
+
+.card p {
+    margin: 0 16px 16px;
+}
+
+.card button {
+  background-color: #f8d030; /* McDonald's yellow */
+  color: white;
+  border:seagreen;
+  border-radius: 5px;
+  font-weight: 700    ;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  padding-left: px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card button:hover {
+    background-color: #e03c30;
+    color: white;
+}
+
+
+
+
+  #about{
+    padding-top: px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: x;
+    
+  }
+
+  #about h1{
+    align-items: center ;
+    color: rgb(247, 243, 14);
+    font-size: 200px;
+    padding-left: 10px;
+    padding-top: -20Spx;
+  }
+  #us {
+    font-family: serif;
+    font-size: 19 px;
+    color: rgb(218, 81, 39);
+    margin-top: -180px;
+    margin-left: 20px;
+    margin-right: 170px;
+  }
+
+  
